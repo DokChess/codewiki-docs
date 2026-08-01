@@ -1,0 +1,32 @@
+{
+    "generation_info": {
+        "timestamp": "2026-08-01T07:46:03.911080",
+        "main_model": "anthropic/claude-sonnet-5",
+        "generator_version": "1.0.1",
+        "repo_path": "/root/GitHub/dokchess-en",
+        "commit_id": "fdeb6a0f2c358297c57cf6dead7fc3831a080d91"
+    },
+    "statistics": {
+        "total_components": 216,
+        "leaf_nodes": 43,
+        "max_depth": 1
+    },
+    "files_generated": [
+        "overview.md",
+        "module_tree.json",
+        "first_module_tree.json",
+        "opening.md",
+        "engine_eval.md",
+        "rules_core.md",
+        "engine_search_parallel_execution.md",
+        "domain.md",
+        "engine_search.md",
+        "main_entry.md",
+        "opening_polyglot.md",
+        "engine_search_minimax_algorithm.md",
+        "engine_core.md",
+        "textui.md",
+        "rules_movement.md",
+        "rules.md"
+    ]
+}

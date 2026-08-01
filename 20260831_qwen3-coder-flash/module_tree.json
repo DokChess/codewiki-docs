@@ -1,0 +1,218 @@
+{
+    "domain": {
+        "path": "src/main/java/org/dokchess/domain",
+        "components": [
+            "src/main/java/org/dokchess/domain/ForsythEdwardsNotation.java::ForsythEdwardsNotation",
+            "src/main/java/org/dokchess/domain/Move.java::Move",
+            "src/main/java/org/dokchess/domain/Piece.java::Piece",
+            "src/main/java/org/dokchess/domain/Position.java::Position",
+            "src/main/java/org/dokchess/domain/Square.java::Square",
+            "src/main/java/org/dokchess/domain/Squares.java::Squares"
+        ],
+        "children": {
+            "position": {
+                "components": [
+                    "src/main/java/org/dokchess/domain/Position.java::Position",
+                    "src/main/java/org/dokchess/domain/ForsythEdwardsNotation.java::ForsythEdwardsNotation"
+                ],
+                "children": {}
+            },
+            "piece": {
+                "components": [
+                    "src/main/java/org/dokchess/domain/Piece.java::Piece",
+                    "src/main/java/org/dokchess/domain/Square.java::Square",
+                    "src/main/java/org/dokchess/domain/Squares.java::Squares"
+                ],
+                "children": {}
+            },
+            "move": {
+                "components": [
+                    "src/main/java/org/dokchess/domain/Move.java::Move"
+                ],
+                "children": {}
+            }
+        }
+    },
+    "engine": {
+        "path": "src/main/java/org/dokchess/engine",
+        "components": [
+            "src/main/java/org/dokchess/engine/DefaultEngine.java::DefaultEngine",
+            "src/main/java/org/dokchess/engine/DetermineMove.java::DetermineMove",
+            "src/main/java/org/dokchess/engine/Engine.java::Engine",
+            "src/main/java/org/dokchess/engine/FromLibrary.java::FromLibrary",
+            "src/main/java/org/dokchess/engine/FromSearch.java::FromSearch",
+            "src/main/java/org/dokchess/engine/eval/Evaluation.java::Evaluation",
+            "src/main/java/org/dokchess/engine/eval/StandardMaterialEvaluation.java::StandardMaterialEvaluation",
+            "src/main/java/org/dokchess/engine/search/MinimaxAlgorithm.java::MinimaxAlgorithm",
+            "src/main/java/org/dokchess/engine/search/MinimaxParallelSearch.java::BestMoveReporter",
+            "src/main/java/org/dokchess/engine/search/MinimaxParallelSearch.java::MinimaxParallelSearch",
+            "src/main/java/org/dokchess/engine/search/MinimaxParallelSearch.java::RootMoveEvaluationTask",
+            "src/main/java/org/dokchess/engine/search/RatedMove.java::RatedMove",
+            "src/main/java/org/dokchess/engine/search/Search.java::Search"
+        ],
+        "children": {
+            "search": {
+                "components": [
+                    "src/main/java/org/dokchess/engine/search/MinimaxParallelSearch.java::MinimaxParallelSearch",
+                    "src/main/java/org/dokchess/engine/search/MinimaxAlgorithm.java::MinimaxAlgorithm",
+                    "src/main/java/org/dokchess/engine/search/Search.java::Search",
+                    "src/main/java/org/dokchess/engine/search/RatedMove.java::RatedMove"
+                ],
+                "children": {}
+            },
+            "eval": {
+                "components": [
+                    "src/main/java/org/dokchess/engine/eval/Evaluation.java::Evaluation",
+                    "src/main/java/org/dokchess/engine/eval/StandardMaterialEvaluation.java::StandardMaterialEvaluation"
+                ],
+                "children": {}
+            }
+        }
+    },
+    "opening": {
+        "path": "src/main/java/org/dokchess/opening",
+        "components": [
+            "src/main/java/org/dokchess/opening/OpeningLibrary.java::OpeningLibrary",
+            "src/main/java/org/dokchess/opening/polyglot/BookEntry.java::BookEntry",
+            "src/main/java/org/dokchess/opening/polyglot/FenTools.java::FenTools",
+            "src/main/java/org/dokchess/opening/polyglot/PolyglotOpeningBook.java::PolyglotOpeningBook",
+            "src/main/java/org/dokchess/opening/polyglot/PolyglotTools.java::PolyglotTools"
+        ],
+        "children": {
+            "polyglot_opening_book": {
+                "components": [
+                    "src/main/java/org/dokchess/opening/polyglot/PolyglotOpeningBook.java::PolyglotOpeningBook",
+                    "src/main/java/org/dokchess/opening/polyglot/SelectionMode.java::SelectionMode"
+                ],
+                "children": {}
+            },
+            "book_entry": {
+                "components": [
+                    "src/main/java/org/dokchess/opening/polyglot/BookEntry.java::BookEntry"
+                ],
+                "children": {}
+            },
+            "fen_tools": {
+                "components": [
+                    "src/main/java/org/dokchess/opening/polyglot/FenTools.java::FenTools"
+                ],
+                "children": {}
+            },
+            "polyglot_tools": {
+                "components": [
+                    "src/main/java/org/dokchess/opening/polyglot/PolyglotTools.java::PolyglotTools"
+                ],
+                "children": {}
+            }
+        }
+    },
+    "rules": {
+        "path": "src/main/java/org/dokchess/rules",
+        "components": [
+            "src/main/java/org/dokchess/rules/BishopMoves.java::BishopMoves",
+            "src/main/java/org/dokchess/rules/CastlingMoves.java::CastlingMoves",
+            "src/main/java/org/dokchess/rules/ChessRules.java::ChessRules",
+            "src/main/java/org/dokchess/rules/ComplexMovement.java::ComplexMovement",
+            "src/main/java/org/dokchess/rules/DefaultChessRules.java::DefaultChessRules",
+            "src/main/java/org/dokchess/rules/KingMoves.java::KingMoves",
+            "src/main/java/org/dokchess/rules/KnightMoves.java::KnightMoves",
+            "src/main/java/org/dokchess/rules/Movement.java::Movement",
+            "src/main/java/org/dokchess/rules/PawnMoves.java::PawnMoves",
+            "src/main/java/org/dokchess/rules/QueenMoves.java::QueenMoves",
+            "src/main/java/org/dokchess/rules/RookMoves.java::RookMoves",
+            "src/main/java/org/dokchess/rules/Tools.java::Tools"
+        ],
+        "children": {
+            "movement_base": {
+                "components": [
+                    "src/main/java/org/dokchess/rules/Movement.java::Movement",
+                    "src/main/java/org/dokchess/rules/ComplexMovement.java::ComplexMovement"
+                ],
+                "children": {}
+            },
+            "piece_moves": {
+                "components": [
+                    "src/main/java/org/dokchess/rules/KnightMoves.java::KnightMoves",
+                    "src/main/java/org/dokchess/rules/RookMoves.java::RookMoves",
+                    "src/main/java/org/dokchess/rules/BishopMoves.java::BishopMoves",
+                    "src/main/java/org/dokchess/rules/QueenMoves.java::QueenMoves",
+                    "src/main/java/org/dokchess/rules/PawnMoves.java::PawnMoves",
+                    "src/main/java/org/dokchess/rules/KingMoves.java::KingMoves"
+                ],
+                "children": {}
+            },
+            "special_moves": {
+                "components": [
+                    "src/main/java/org/dokchess/rules/CastlingMoves.java::CastlingMoves"
+                ],
+                "children": {}
+            },
+            "tools": {
+                "components": [
+                    "src/main/java/org/dokchess/rules/Tools.java::Tools"
+                ],
+                "children": {}
+            },
+            "core_rules": {
+                "components": [
+                    "src/main/java/org/dokchess/rules/ChessRules.java::ChessRules",
+                    "src/main/java/org/dokchess/rules/DefaultChessRules.java::DefaultChessRules"
+                ],
+                "children": {}
+            }
+        }
+    },
+    "textui": {
+        "path": "src/main/java/org/dokchess/textui",
+        "components": [
+            "src/main/java/org/dokchess/textui/xboard/MoveParser.java::MoveParser",
+            "src/main/java/org/dokchess/textui/xboard/XBoard.java::XBoard"
+        ],
+        "children": {
+            "xboard": {
+                "components": [
+                    "src/main/java/org/dokchess/textui/xboard/XBoard.java::XBoard"
+                ],
+                "children": {}
+            },
+            "move_parser": {
+                "components": [
+                    "src/main/java/org/dokchess/textui/xboard/MoveParser.java::MoveParser"
+                ],
+                "children": {}
+            }
+        }
+    },
+    "main": {
+        "path": "src/main/java/org/dokchess/Main.java",
+        "components": [
+            "src/main/java/org/dokchess/Main.java::Main"
+        ],
+        "children": {}
+    },
+    "integration_tests": {
+        "path": "src/integTest/java/org/dokchess",
+        "components": [
+            "src/integTest/java/org/dokchess/engine/integration/EngineVsRandomIntegTest.java::EngineVsRandomIntegTest",
+            "src/integTest/java/org/dokchess/engine/integration/EngineVsRandomIntegTest.java::ZugHinRueck",
+            "src/integTest/java/org/dokchess/engine/integration/EngineVsRandomIntegTest.java::MoveOrder",
+            "src/integTest/java/org/dokchess/textui/integration/XBoardIntegTest.java::XBoardIntegTest"
+        ],
+        "children": {
+            "engine_vs_random_integration": {
+                "components": [
+                    "src/integTest/java/org/dokchess/engine/integration/EngineVsRandomIntegTest.java::EngineVsRandomIntegTest",
+                    "src/integTest/java/org/dokchess/engine/integration/EngineVsRandomIntegTest.java::ZugHinRueck",
+                    "src/integTest/java/org/dokchess/engine/integration/EngineVsRandomIntegTest.java::MoveOrder"
+                ],
+                "children": {}
+            },
+            "xboard_integration": {
+                "components": [
+                    "src/integTest/java/org/dokchess/textui/integration/XBoardIntegTest.java::XBoardIntegTest"
+                ],
+                "children": {}
+            }
+        }
+    }
+}

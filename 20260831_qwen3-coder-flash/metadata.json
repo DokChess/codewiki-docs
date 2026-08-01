@@ -1,0 +1,46 @@
+{
+    "generation_info": {
+        "timestamp": "2026-07-31T13:19:17.511191",
+        "main_model": "qwen/qwen3-coder-flash",
+        "generator_version": "1.0.1",
+        "repo_path": "/root/GitHub/dokchess-en",
+        "commit_id": "fdeb6a0f2c358297c57cf6dead7fc3831a080d91"
+    },
+    "statistics": {
+        "total_components": 216,
+        "leaf_nodes": 43,
+        "max_depth": 1
+    },
+    "files_generated": [
+        "overview.md",
+        "module_tree.json",
+        "first_module_tree.json",
+        "book_entry.md",
+        "core_rules.md",
+        "engine.md",
+        "opening.md",
+        "tools.md",
+        "piece.md",
+        "search.md",
+        "special_moves.md",
+        "move_parser.md",
+        "piece_moves.md",
+        "xboard_integration.md",
+        "move.md",
+        "fen_tools.md",
+        "domain.md",
+        "xboard.md",
+        "main.md",
+        "engine_vs_random_integration.md",
+        "eval.md",
+        "textui_xboard.md",
+        "engine_architecture.md",
+        "movement_base.md",
+        "textui.md",
+        "polyglot_tools.md",
+        "position.md",
+        "integration_tests.md",
+        "polyglot_opening_book.md",
+        "rules.md"
+    ]
+}
