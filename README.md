@@ -20,7 +20,7 @@ Start at `overview.md` inside any output directory of this repository, or use th
 ## About DokChess
 
 DokChess is a fully functional chess engine written in Java.
-It was built as a  teaching example for software architecture documentation following the [arc42](https://arc42.org/) template, and is used in talks, trainings and university courses.
+It was built as a  teaching example for software architecture documentation following the [arc42](https://arc42.org/overview/) template, and is used in talks, trainings and university courses.
 
 - Source code: [DokChess/dokchess-en](https://github.com/DokChess/dokchess-en)
 - Architecture documentation: [www.dokchess.de](https://www.dokchess.de/en/)
