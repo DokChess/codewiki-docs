@@ -19,7 +19,7 @@ It was built as a  teaching example for software architecture documentation foll
 
 The generated text and diagrams in this repository are licensed under [CC BY-SA 4.0](LICENSE).
 
-Copyright © 2026 <!-- your name here -->
+Copyright © 2026 Stefan Zörner
 
 Note the following exceptions:
 
