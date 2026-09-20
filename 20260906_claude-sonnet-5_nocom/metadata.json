@@ -1,0 +1,38 @@
+{
+    "generation_info": {
+        "timestamp": "2026-09-06T18:22:10.453264",
+        "main_model": "anthropic/claude-sonnet-5",
+        "generator_version": "1.0.1",
+        "repo_path": "/root/cw-input/dokchess-en-nocom",
+        "commit_id": "8476f3e48cdee07bfa9e6e610c5a3dbcc3f14b36"
+    },
+    "statistics": {
+        "total_components": 216,
+        "leaf_nodes": 43,
+        "max_depth": 1
+    },
+    "files_generated": [
+        "overview.md",
+        "module_tree.json",
+        "first_module_tree.json",
+        "chess_rules_attack_detection.md",
+        "chess_rules_movement_generation.md",
+        "engine_evaluation.md",
+        "xboard_ui_move_translation.md",
+        "xboard_ui_protocol.md",
+        "domain.md",
+        "engine_search.md",
+        "main_entry.md",
+        "xboard_ui.md",
+        "opening_polyglot.md",
+        "engine_search_minimax_algorithm.md",
+        "chess_rules_engine.md",
+        "opening_polyglot_binary_utils.md",
+        "engine_core.md",
+        "chess_rules.md",
+        "opening_polyglot_book_access.md",
+        "opening_library.md",
+        "engine_search_parallel_search.md",
+        "integration_tests.md"
+    ]
+}

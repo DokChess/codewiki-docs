@@ -9,10 +9,11 @@ This repository holds documentation for the [dokchess-en](https://github.com/Dok
 
 ## Available Outputs
 
-| Model used by CodeWiki | Generated  | Browsable Output |
-|------------------------|------------|------------------|
-| Qwen 3 Coder Flash     | 2026-07-31 | [20260831_qwen3-coder-flash](https://dokchess.github.io/codewiki-docs/20260831_qwen3-coder-flash) |
-| Claude Sonnet 5        | 2026-08-01| [20260801_claude-sonnet-5](https://dokchess.github.io/codewiki-docs/20260801_claude-sonnet-5) |
+| Model used by CodeWiki        | Generated  | Browsable Output | Notes |
+|-------------------------------|------------|-------------------|-------|
+| Qwen 3 Coder Flash            | 2026-07-31 | [20260831_qwen3-coder-flash](https://dokchess.github.io/codewiki-docs/20260831_qwen3-coder-flash) | |
+| Claude Sonnet 5               | 2026-08-01 | [20260801_claude-sonnet-5](https://dokchess.github.io/codewiki-docs/20260801_claude-sonnet-5) | |
+| Claude Sonnet 5               | 2026-09-06 | [20260906_claude-sonnet-5_nocom](https://dokchess.github.io/codewiki-docs/20260906_claude-sonnet-5_nocom) | Source code stripped of all comments, as an experiment — see [this blog post]() |
 
 Start at `overview.md` inside any output directory of this repository, or use the browsable viewer linked above.
 
